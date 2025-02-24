@@ -1,6 +1,6 @@
 'use client';
 
-import { NextUIProvider } from "@nextui-org/react";
+import { HeroUIProvider } from "@heroui/react";
 import { SessionProvider } from "next-auth/react";
 
 interface ProvidersProps {
@@ -11,7 +11,7 @@ export default function Providers({ children }: ProvidersProps) {
     return (
         // session provider is required to use useSession hook in client component 
         <SessionProvider>
-            <NextUIProvider>{children}</NextUIProvider>
+            <HeroUIProvider>{children}</HeroUIProvider>
         </SessionProvider>
-    )
+    );
 }
