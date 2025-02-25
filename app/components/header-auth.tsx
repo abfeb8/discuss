@@ -1,6 +1,6 @@
 'use client'
 
-import { signIn, signOut } from "@/actions";
+import { signIn, signOut } from "@/app/actions";
 import { Avatar, Button, NavbarItem, Popover, PopoverContent, PopoverTrigger } from "@heroui/react";
 import { useSession } from "next-auth/react";
 
